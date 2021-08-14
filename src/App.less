@@ -1,0 +1,28 @@
+@import "./styles/index.less";
+
+.App {
+  margin: @pixel-size * 4 auto;
+  max-width: @pixel-size * 60;
+
+  .board {
+    margin: @pixel-size * 4 auto;
+  }
+}
+
+.form-item {
+  display: flex;
+  margin: @pixel-size * 4 @pixel-size * 0;
+
+  .form-item-label {
+    font-size: @pixel-size * 2;
+    line-height: @pixel-size * 5;
+  }
+
+  .form-item-value {
+    margin-left: @pixel-size * 1;
+
+    > .ant-select {
+      width: 200px;
+    }
+  }
+}

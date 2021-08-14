@@ -1,0 +1,21 @@
+@import "../styles/index.less";
+
+.menu {
+  margin: @pixel-size * 4 @pixel-size * 0;
+  text-align: center;
+
+  > .ant-btn {
+    margin-left: @pixel-size * 2;
+
+    &:first-child {
+      margin-left: @pixel-size * 0;
+    }
+
+    > svg {
+      vertical-align: middle;
+      margin-top: @pixel-size * -0.25;
+      margin-left: @pixel-size * -1;
+      margin-right: @pixel-size * 0.5;
+    }
+  }
+}
