@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Select } from "antd";
-import { AnimateEaseInOut, AnimateMergeAndSlide } from "./pages";
+import { AnimateAll, AnimateEaseInOut, AnimateMergeAndSlide } from "./pages";
 
 import "./App.less";
 
@@ -13,6 +13,8 @@ export const App = () => {
 
   const renderContent = () => {
     switch (value) {
+      case "all":
+        return <AnimateAll />;
       case "merge-and-slide":
         return <AnimateMergeAndSlide />;
       default:
@@ -30,6 +32,7 @@ export const App = () => {
             <Select.Option value="merge-and-slide">
               Slide and Merge
             </Select.Option>
+            <Select.Option value="all">All</Select.Option>
           </Select>
         </div>
       </div>
